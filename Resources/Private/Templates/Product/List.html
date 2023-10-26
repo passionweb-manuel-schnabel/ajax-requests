@@ -1,0 +1,44 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="content">
+    <f:asset.script identifier="ajaxRequestsFilterJs" src="EXT:ajax_requests/Resources/Public/JavaScript/filter.js" />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Sample product filter</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <f:form
+                    action="filter"
+                    method="post"
+                    controller="Product"
+                    extensionName="AjaxRequests"
+                    pluginName="AjaxRequestsFilter"
+                    id="filterForm"
+                    pageType="1698311370"
+                >
+                    <f:form.select
+                        id="categoryFilter"
+                        name="category"
+                        class="form-control"
+                        options="{categories}"
+                        optionLabelField="title"
+                        prependOptionLabel="All categories"
+                        prependOptionValue="0"
+                    />
+                </f:form>
+
+            </div>
+        </div>
+    </div>
+    <div id="filterResults" class="container mt-3">
+        <f:render partial="Product/Items" arguments="{products: products}" />
+    </div>
+</f:section>
+</html>

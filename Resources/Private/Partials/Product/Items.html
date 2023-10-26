@@ -1,0 +1,19 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+    <div class="row">
+        <f:if condition="{products}">
+            <f:then>
+                <f:for each="{products}" as="product">
+                    <div class="col-md-4">
+                        <strong>{product.title}</strong>
+                        <f:format.raw>{product.description}</f:format.raw>
+                    </div>
+                </f:for>
+            </f:then>
+            <f:else>
+                <div class="col-md-12">
+                    <p>No products found.</p>
+                </div>
+            </f:else>
+        </f:if>
+    </div>
+</html>

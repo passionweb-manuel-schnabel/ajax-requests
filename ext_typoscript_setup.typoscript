@@ -1,0 +1,25 @@
+
+    plugin.tx_ajaxrequests_filter {
+        settings {
+            typeNumAJAX = 1698311370
+        }
+        features {
+            requireCHashArgumentForActionArguments = 0
+        }
+    }
+
+    ajax_filter = PAGE
+    ajax_filter {
+        typeNum = 1698311370
+        config {
+            disableAllHeaderCode = 1
+            xhtml_cleaning = 0
+            admPanel = 0
+            no_cache = 1
+            debug = 0
+        }
+
+        10 = COA
+        10 < tt_content.list.20.ajaxrequests_filter
+    }
+

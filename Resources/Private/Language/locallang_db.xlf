@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:ajax_requests/Resources/Private/Language/locallang_db" date="2023-05-19T13:34:38Z" product-name="ajax_requests">
+		<header/>
+		<body>
+			<trans-unit id="plugin_ajaxrequests_filter.name" resname="plugin_ajaxrequests_filter.name">
+				<source>Sample product filter</source>
+			</trans-unit>
+			<trans-unit id="plugin_ajaxrequests_filter.description" resname="plugin_ajaxrequests_filter.description">
+				<source>Adds a filter which will be updated by AJAX requests</source>
+			</trans-unit>
+			<trans-unit id="tx_ajaxrequests_domain_model_product" resname="tx_ajaxrequests_domain_model_product.product">
+                <source>Product</source>
+            </trans-unit>
+			<trans-unit id="tx_ajaxrequests_domain_model_product.title" resname="tx_ajaxrequests_domain_model_product.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_ajaxrequests_domain_model_product.description" resname="tx_ajaxrequests_domain_model_product.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="tx_ajaxrequests_domain_model_product.category" resname="tx_ajaxrequests_domain_model_product.category">
+                <source>Category</source>
+            </trans-unit>
+            <trans-unit id="tx_ajaxrequests_domain_model_category" resname="tx_ajaxrequests_domain_model_category">
+                <source>Category</source>
+            </trans-unit>
+            <trans-unit id="tx_ajaxrequests_domain_model_category.title" resname="tx_ajaxrequests_domain_model_category.title">
+                <source>Title</source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>
